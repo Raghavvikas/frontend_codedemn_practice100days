@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.container{
+    
+    display:flex;
+    gap: 10px;
+    flex-wrap:wrap;
+}
+
+.name{
+    flex: 1 0 120px;
+    height: 5vh;
+
+}
+.email{
+    flex: 1 0 150px;
+    height: 5vh;
+}
+
+.container button{
+    flex: 1 0 60px;
+    height: 5vh;
+}
+
+.container button:hover {
+  display: block;
+  filter: drop-shadow(0 0 10px #fffdef);
+  color: rgb(122, 132, 132);
+  font-weight: 800;
 }
